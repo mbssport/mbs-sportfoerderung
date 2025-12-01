@@ -56,54 +56,19 @@
     }
 
     .nav-brand {
-      font-weight: 700;
-      letter-spacing: 0.03em;
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.75rem;
     }
 
-    /* nüchternes mbs-Logo mit Skiern */
-    .nav-brand .logo {
-      position: relative;
+    .nav-logo-link {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      padding: 0.25rem 0.8rem 0.25rem 0.9rem;
-      border-radius: 999px;
-      background: #111827;
-      color: #f9fafb;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: lowercase;
-      letter-spacing: 0.1em;
-      overflow: hidden;
     }
 
-    .nav-brand .logo::before,
-    .nav-brand .logo::after {
-      content: "";
-      position: absolute;
-      right: 0.35rem;
-      width: 2px;
-      height: 18px;
-      border-radius: 999px;
-      background: #e5e7eb;
-      opacity: 0.9;
-      transform-origin: bottom;
-    }
-
-    .nav-brand .logo::before {
-      transform: rotate(-10deg) translateY(1px);
-    }
-
-    .nav-brand .logo::after {
-      transform: rotate(10deg) translateY(1px);
-    }
-
-    .nav-brand span:last-child {
-      font-weight: 600;
-      font-size: 0.95rem;
+    .nav-logo-img {
+      height: 42px; /* bei Bedarf anpassen */
+      display: block;
     }
 
     .nav-links {
@@ -503,8 +468,10 @@
   <header>
     <div class="nav">
       <div class="nav-brand">
-        <span class="logo">mbs</span>
-        <span>Sportförderung</span>
+        <a href="#start" class="nav-logo-link">
+          <!-- Logo-Datei muss im Repo z.B. logo-mbs.png heißen -->
+          <img src="logo-mbs.png" alt="mbs Sportförderung Logo" class="nav-logo-img">
+        </a>
       </div>
       <nav class="nav-links">
         <a href="#start">Start</a>
@@ -527,12 +494,12 @@
         <h1 class="hero-title">Wir fördern Talente im alpinen Skisport.</h1>
         <p class="hero-subtitle">
           MBS Sportförderung begleitet ausgewählte Wintersport-Athletinnen und -Athleten
-          mit Potenzial – mit dem Ziel, sie Schritt für Schritt an nationale und
-          internationale Wettkämpfe heranzuführen.
+          mit Potenzial – mit dem Ziel, sie Schritt für Schritt an den Erfolg bei nationalen und
+          internationalen Wettkämpfen heranzuführen.
         </p>
 
         <div class="hero-actions">
-          <a class="btn-primary" href="#kontakt">Förderanfrage stellen</a>
+          <a class="btn-primary" href="#kontakt">Unsere Förderung unterstützen</a>
           <a class="btn-secondary" href="#sportler">Unsere Athleten kennenlernen</a>
         </div>
 
@@ -540,20 +507,6 @@
           <strong>Unsere Mission:</strong> gezielte Unterstützung statt Gießkanne – klarer Fokus auf
           langfristige Entwicklung im alpinen Nachwuchsleistungssport.
         </p>
-      </div>
-
-        <ul>
-          <li>Individuelle Förderkonzepte statt Standardlösungen</li>
-          <li>Enge Abstimmung mit Vereinen und Trainerteams</li>
-          <li>Nachhaltige Entwicklung über mehrere Saisons</li>
-        </ul>
-
-        <p class="hero-note">
-          Wenn Sie uns unterstützen möchten, schreiben Sie uns:
-          <a href="mailto:info@mbs-sportfoerderung.de">info@mbs-sportfoerderung.de</a>
-        </p>
-      </aside>
-    </section>
 
     <!-- Unsere Mission -->
     <section id="mission">
@@ -563,7 +516,7 @@
           Wir unterstützen ausgewählte Wintersport-Athleten mit Potenzial dabei,
           erfolgreich an nationalen und internationalen Wettkämpfen teilzunehmen.
           Im Fokus steht der alpine Skirennsport – von den ersten Schritten im Nachwuchsbereich
-          bis zur stabilen Etablierung im FIS-Kalender und darüber hinaus.
+          bis zur stabilen Etablierung im FIS-Bereich.
         </p>
       </div>
 
@@ -603,22 +556,17 @@
         <div class="card">
           <h3>Theo Söndgerath</h3>
           <p class="athlete-meta">
-            <strong>Disziplin:</strong> Ski Alpin · <strong>Jahrgang:</strong> 2006 ·
-            <strong>Nation:</strong> GER · <strong>FIS-Code:</strong> 203293
+            <strong>Disziplin:</strong> Ski Alpin · <strong>Jahrgang:</strong> 2006
           </p>
           <p>
-            Theo startet im alpinen Skirennsport und ist über den Bayerischen Skiverband
-            im Regionalkader Oberland gemeldet. Er fährt für das Snowteam Neuss und den SC Kreuth und ist auf FIS-Ebene
-            in Slalom, Riesenslalom und Super G international im Einsatz. 
+            Theo startet im alpinen Skirennsport und ist über seinen Verein in den
+            Strukturen desWestdeutschen und des Bayerischen Skiverbands eingebunden. Er sammelt Erfahrung
+            im FIS-Umfeld und konzentriert sich vorrangig auf die technischen Disziplinen.
           </p>
           <p>
-            In der Saison 2024/25 und 2025/26 nimmt er regelmäßig an FIS- und CIT-Rennen teil
-            und sammelt dort wichtige Punkte und Erfahrung im internationalen Umfeld – unter
-            anderem bei Rennen in Deutschland, Österreich und Frankreich. 
-          </p>
-          <p style="font-size:0.85rem; color:var(--muted); margin-top:0.7rem;">
-            Weitere sportliche Daten zu Theo sind im
-            offiziellen FIS-Portal abrufbar (Athletenbiografie &amp; Ergebnisübersicht).
+            Ziel ist eine kontinuierliche Entwicklung im FIS-Bereich, stabile Leistungen
+            über die Saison hinweg und der Einstieg in ein dauerhaftes, internationales
+            Wettkampfprogramm.
           </p>
         </div>
 
@@ -626,22 +574,16 @@
         <div class="card">
           <h3>Hugo Söndgerath</h3>
           <p class="athlete-meta">
-            <strong>Disziplin:</strong> Ski Alpin · <strong>Altersklasse:</strong> U12 ·
-            <strong>Verein:</strong> Snowteam Neuss
+            <strong>Disziplin:</strong> Ski Alpin · <strong>Altersklasse:</strong> U12
           </p>
           <p>
             Hugo ist im Nachwuchsbereich des Westdeutschen Skiverbands aktiv und startet
-            für das Snowteam Neuss. Im Rahmen des wsv-Kids-Cup konnte er sich in seiner
-            Altersklasse mehrfach durchsetzen. 
+            für das Snowteam Neuss. In seiner Altersklasse sammelt er wesentliche
+            Erfahrungen in Technik- und Vielseitigkeitsbewerben.
           </p>
           <p>
-            In der Saison 2024/25 gewann er die Gesamtwertung des wsv-Kids-Cup in seiner
-            Kategorie und sammelte dabei wichtige Rennenfahrungen in Superslalom- und
-            Technikbewerben. 
-          </p>
-          <p style="font-size:0.85rem; color:var(--muted); margin-top:0.7rem;">
-            Informationen zu Ergebnissen und Serienwertungen sind über die Plattformen
-            des Westdeutschen Skiverbands (WSV) einsehbar.
+            Im Mittelpunkt stehen eine saubere technische Ausbildung, vielseitiges Training
+            auf und neben der Piste sowie die behutsame Heranführung an den Rennsport.
           </p>
         </div>
       </div>
@@ -656,26 +598,13 @@
           Trainingsumfeld aus Vereins-, Verbands- und Stützpunkttrainern. MBS
           Sportförderung arbeitet dabei eng mit den verantwortlichen Trainerteams zusammen.
         </p>
-      </div>
-
-      <div class="two-column">
-        <div>
-          <h3>Zusammenarbeit im Trainerteam</h3>
-          <ul class="list-check">
-            <li>Abstimmung von Saisonplanung und Zielwettkämpfen</li>
-            <li>Koordination von Lehrgängen, Stützpunkttrainings und Materialtests</li>
-            <li>Laufende Rücksprache zu Trainingsinhalten und Belastungssteuerung</li>
-            <li>Transparente Kommunikation mit Eltern und Athleten</li>
-          </ul>
-        </div>
         <div class="highlight-box">
           <strong>Vereins- und Verbandsumfeld</strong>
           <p>
-            Unsere Athleten sind fest in ihren Vereinen und Verbänden eingebunden,
-            beispielsweise im Snowteam Neuss und im Regionalkader Oberland des
-            Bayerischen Skiverbands (SC Kreuth). MBS Sportförderung ergänzt diese
-            Strukturen um finanzielle und organisatorische Unterstützung – die
-            sportliche Verantwortung liegt bei den zuständigen Trainerteams. 
+            Unsere Athleten sind fest in ihren Vereinen und Verbänden eingebunden.
+            MBS Sportförderung ergänzt diese Strukturen um finanzielle und
+            organisatorische Unterstützung – die sportliche Verantwortung liegt bei
+            den zuständigen Trainerteams.
           </p>
           <p style="margin-top:0.5rem;">
             Konkrete Trainerprofile und Zuständigkeiten können bei Bedarf
@@ -690,8 +619,8 @@
       <div class="section-header">
         <h2>Kontakt</h2>
         <p>
-          Sie haben eine Projektidee, möchten unsere Förderung unterstützen oder
-          einfach mehr über MBS Sportförderung erfahren? Wir freuen uns auf Ihre Nachricht.
+          Sie möchten die
+          MBS Sportförderung oder einzelne Athleten unterstützen? Wir freuen uns auf Ihre Nachricht.
         </p>
       </div>
 
@@ -699,12 +628,6 @@
         <div class="contact-details">
           <h3>So erreichen Sie uns</h3>
           <p><strong>E-Mail:</strong> <a href="mailto:info@mbs-sportfoerderung.de">info@mbs-sportfoerderung.de</a></p>
-          <p><strong>Telefon:</strong> wird ergänzt</p>
-          <p><strong>Adresse:</strong><br>
-            wird ergänzt<br>
-            PLZ Ort
-          </p>
-          <p class="contact-form-hint">
         </div>
 
     </section>
